@@ -14,5 +14,5 @@ void main(List<String> arguments) async {
     return Response.ok('Hello $param!');
   });
 
-  await io.serve(app.handler, 'localhost', 8083);
+  await io.serve(app, 'localhost', 8083);
 }
